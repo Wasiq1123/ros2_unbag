@@ -19,20 +19,8 @@ git clone https://github.com/Wasiq1123/ros2_unbag.git
 
 ---
 
-### 2. Build the Package
 
-Go to the root of your workspace and build:
-
-```bash
-cd ~/ros2_ws/ros2_unbag
-source /opt/ros/humble/setup.bash   # Replace 'humble' with your ROS2 distro if different
-colcon build --packages-select ros2_bag_exporter
-source install/setup.bash
-```
-
----
-
-### 3. Record ROS2 Bag Data
+### 2. Record ROS2 Bag Data
 
 In a new terminal, source ROS and run the bag recording command:
 
@@ -46,7 +34,7 @@ The bag files (`.db3`) will be saved in your current directory or a specified pa
 
 ---
 
-### 4. Modify the Exporter Configuration
+### 3. Modify the Exporter Configuration
 
 Edit the configuration file `ros2_bag_exporter/config/exporter_config.yaml`:
 
@@ -71,6 +59,20 @@ topics:
     type: "Image"
     encoding: "rgb8"
     sample_interval: 5
+```
+
+---
+
+### 2. Build the Package
+
+Go to the root of your workspace and build:
+
+```bash
+cd ~/ros2_ws/ros2_unbag
+source /opt/ros/humble/setup.bash   # Replace 'humble' with your ROS2 distro if different
+rm -rf build/ install/ log/
+colcon build
+source install/setup.bash
 ```
 
 ---
