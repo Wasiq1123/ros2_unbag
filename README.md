@@ -12,8 +12,8 @@ This project helps you record ROS2 bag data, export topic data into CSV files, a
 ### 1. Create ROS2 Workspace and Clone Repository
 
 ```bash
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws/src
+mkdir -p ~/ros2_ws
+cd ~/ros2_ws
 git clone https://github.com/Wasiq1123/ros2_unbag.git
 ````
 
@@ -24,7 +24,7 @@ git clone https://github.com/Wasiq1123/ros2_unbag.git
 Go to the root of your workspace and build:
 
 ```bash
-cd ~/ros2_ws
+cd ~/ros2_ws/ros2_unbag
 source /opt/ros/humble/setup.bash   # Replace 'humble' with your ROS2 distro if different
 colcon build --packages-select ros2_bag_exporter
 source install/setup.bash
