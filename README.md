@@ -63,7 +63,7 @@ topics:
 
 ---
 
-### 2. Build the Package
+### 4. Build the Package
 
 Go to the root of your workspace and build:
 
