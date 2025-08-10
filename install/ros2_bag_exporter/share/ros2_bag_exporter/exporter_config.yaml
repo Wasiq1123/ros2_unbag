@@ -1,0 +1,33 @@
+bag_path: "/home/wasiq/Downloads/mws/mws_0.db3"  
+output_dir: "/home/wasiq/Downloads/output"
+storage_id: "sqlite3"  # or "mcap" if that's your format
+
+topics:
+  - name: "/camera/depth/image_raw"
+    type: "DepthImage"
+    encoding: "bgr8"
+    sample_interval: 10
+  - name: "/camera/color/image_raw"
+    type: "Image"
+    encoding: "rgb8"
+    sample_interval: 5
+  - name: "/camera/color/image_raw/compressed"
+    type: "CompressedImage"
+    sample_interval: 5
+  - name: "/imu"
+    type: "IMU"
+    sample_interval: 100
+  - name: "/gps"
+    type: "GPS"
+    sample_interval: 100
+  - name: "/lidar/points"
+    type: "PointCloud2"
+    sample_interval: 10
+    save_mode: "auto"
+  - name: "/path"
+    type: "Path"
+    sample_interval: 1
+  - name: "/odom"
+    type: "Odometry"
+    sample_interval: 1
+

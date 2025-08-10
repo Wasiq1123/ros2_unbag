@@ -1,0 +1,54 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Unix Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "/home/wasiq/.local/lib/python3.10/site-packages/cmake/data/bin/cmake",
+			"cpack" : "/home/wasiq/.local/lib/python3.10/site-packages/cmake/data/bin/cpack",
+			"ctest" : "/home/wasiq/.local/lib/python3.10/site-packages/cmake/data/bin/ctest",
+			"root" : "/home/wasiq/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.27"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 27,
+			"patch" : 1,
+			"string" : "3.27.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-aea958552e72cedbf6c6.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		}
+	],
+	"reply" : 
+	{
+		"client-colcon-cmake" : 
+		{
+			"codemodel-v2" : 
+			{
+				"jsonFile" : "codemodel-v2-aea958552e72cedbf6c6.json",
+				"kind" : "codemodel",
+				"version" : 
+				{
+					"major" : 2,
+					"minor" : 6
+				}
+			}
+		}
+	}
+}
